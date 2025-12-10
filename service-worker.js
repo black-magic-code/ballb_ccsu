@@ -44,6 +44,7 @@ self.addEventListener('install', (event) => {
 'sociology-2018.pdf',
 'sociology-2017.pdf',
 'sociology-2016.pdf',
+'BA-LLB-Complete-Syllabus.pdf',
       ]);
     })
   );
@@ -56,3 +57,4 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
+
