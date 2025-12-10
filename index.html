@@ -1,32 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
  <title>Resource by Shivam Kashyap</title>
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="manifest" href="/manifest.json">
-
+ <link rel="manifest" href="manifest.json">
 </head>
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-      console.log('Service Worker registered with scope:', registration.scope);
-    }).catch(function(error) {
-      console.log('Service Worker registration failed:', error);
-    });
-  }
-</script>
-
+<style>
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding:4px;
+   }
+   ul{
+      display: flex;
+      flex-direction: column;
+      background: #acdcac;
+      list-style:decimal;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 0;
+   }
+   li{
+         padding: 5px;
+   }
+   a{
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: blue;
+   }
+</style>
 <body>
    <h2>BA, LLB - Syllabus of all year</h2>
-   <a href="BA-LLB-Complete-Syllabus.pdf" target="_blank">Syllabus PDF</a><br>
+   <ul><li><a href="BA-LLB-Complete-Syllabus.pdf" target="_blank">Syllabus PDF</a></li></ul><br>
 <hr>
 <h2>PYQ - BALLB Previous year question papers </h2>
 <br>
 
+<h3>Economics PYQs</h3>
 <ul>
-   <h3>Economics PYQs</h3>
    <li><a href="./economics-2023.pdf">2023 Economics</a></li>
    <li><a href="./economics--2022.pdf">2022 Economics</a></li>
    <li><a href="./economics-2021.pdf">2021 Economics</a></li>
@@ -39,8 +57,8 @@
 <br>
 <br>
 
+<h3>General English PYQs</h3>
 <ul>
-   <h3>General English PYQs</h3>
    <li><a href="./general-english-2024.pdf">2024 General English</a></li>
    <li><a href="./general-english-2023.pdf">2023 General English</a></li>
    <li><a href="./general-english-2022.pdf">2022 General English</a></li>
@@ -55,8 +73,8 @@
 <br>
 <br>
 
+<h3>Indian History PYQs</h3>
 <ul>
-   <h3>Indian History PYQs</h3>
    <li><a href="./indian-history-2023.pdf">2023 Indian History</a></li>
    <li><a href="./indian-history-2022.pdf">2022 Indian History</a></li>
    <li><a href="./indian-history-np-2021.pdf">2021 Indian History</a></li>
@@ -69,8 +87,8 @@
 <br>
 <br>
 
+<h3>Political theory & science PYQs</h3>
 <ul>
-   <h3>Political theory & science PYQs</h3>
    <li><a href="./political-2022.pdf">2022 Political theory & science</a></li>
    <li><a href="./2political-2022.pdf">2022-2 Political theory & science</a></li>
    <li><a href="./political-2021.pdf">2021 Political theory & science</a></li>
@@ -83,8 +101,8 @@
 <br>
 <br>
 
+<h3>Sociology PYQs</h3>
 <ul>
-   <h3>Sociology PYQs</h3>
    <li><a href="./sociology-2023.pdf">2023 Sociology</a></li>
    <li><a href="./sociology-2021.pdf">2021 Sociology</a></li>
    <li><a href="./sociology-2020.pdf">2020 Sociology</a></li>
@@ -95,3 +113,13 @@
 </ul>
 <br>
 </body>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+      console.log('Service Worker registered with scope:', registration.scope);
+    }).catch(function(error) {
+      console.log('Service Worker registration failed:', error);
+    });
+  }
+</script>
+</html>
