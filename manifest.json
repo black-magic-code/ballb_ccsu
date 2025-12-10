@@ -1,0 +1,15 @@
+{
+  "name": "Offline Exam PYQs PDFs by Shivam Kashyap",
+  "short_name": "Offline Exam",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "Offline access to exam PDFs",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
